@@ -1,3 +1,9 @@
+# revision 23092
+# category TLCore
+# catalog-ctan /language/hyphenation/lahyph.tex
+# catalog-date 2009-09-29 00:01:21 +0200
+# catalog-license lppl
+# catalog-version 3.1
 Name:		texlive-hyphen-latin
 Version:	3.1
 Release:	1
@@ -51,6 +57,7 @@ Latin and those of medieval Latin.
 %_texmf_language_dat_d/hyphen-latin
 %_texmf_language_def_d/hyphen-latin
 %_texmf_language_lua_d/hyphen-latin
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,6 +66,8 @@ Latin and those of medieval Latin.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-latin <<EOF
 %% from hyphen-latin:
