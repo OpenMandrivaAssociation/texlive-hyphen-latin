@@ -49,12 +49,12 @@ Latin and those of medieval Latin.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-latin <<EOF
-%% from hyphen-latin:
+\%\% from hyphen-latin:
 latin loadhyph-la.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-latin <<EOF
-%% from hyphen-latin:
+\%\% from hyphen-latin:
 \addlanguage{latin}{loadhyph-la.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
