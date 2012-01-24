@@ -6,7 +6,7 @@
 # catalog-version 3.1
 Name:		texlive-hyphen-latin
 Version:	3.1
-Release:	2
+Release:	3
 Summary:	Latin hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
@@ -49,14 +49,16 @@ Latin and those of medieval Latin.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-latin <<EOF
-\%\% from hyphen-latin:
+\%% from hyphen-latin:
 latin loadhyph-la.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-latin
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-latin <<EOF
-\%\% from hyphen-latin:
+\%% from hyphen-latin:
 \addlanguage{latin}{loadhyph-la.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-latin
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-latin <<EOF
 -- from hyphen-latin:
