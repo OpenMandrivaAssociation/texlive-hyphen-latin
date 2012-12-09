@@ -71,3 +71,25 @@ cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-latin <<EOF
 		hyphenation = '',
 	},
 EOF
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.1-4
++ Revision: 804803
+- Update to latest release.
+
+* Tue Jan 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.1-3
++ Revision: 767566
+- Add workaround to rpm bug that broke hyphenation files
+
+* Wed Jan 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.1-2
++ Revision: 759926
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.1-1
++ Revision: 718668
+- texlive-hyphen-latin
+- texlive-hyphen-latin
+- texlive-hyphen-latin
+- texlive-hyphen-latin
+
