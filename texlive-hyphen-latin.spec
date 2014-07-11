@@ -6,7 +6,7 @@
 # catalog-version 3.1
 Name:		texlive-hyphen-latin
 Version:	3.1
-Release:	9
+Release:	10
 Summary:	Latin hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
