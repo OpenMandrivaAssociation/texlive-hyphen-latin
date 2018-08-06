@@ -1,12 +1,6 @@
-# revision 25990
-# category TLCore
-# catalog-ctan /language/hyphenation/lahyph.tex
-# catalog-date 2009-09-29 00:01:21 +0200
-# catalog-license lppl
-# catalog-version 3.1
 Name:		texlive-hyphen-latin
-Version:	3.1
-Release:	2
+Version:	20180409
+Release:	1
 Summary:	Latin hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
