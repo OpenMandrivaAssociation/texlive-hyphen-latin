@@ -1,5 +1,5 @@
 Name:		texlive-hyphen-latin
-Version:	20181105
+Version:	20190406
 Release:	1
 Summary:	Latin hyphenation patterns
 Group:		Publishing
