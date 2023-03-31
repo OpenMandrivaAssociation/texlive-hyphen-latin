@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-latin
 Version:	58652
-Release:	1
+Release:	2
 Summary:	Latin hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
