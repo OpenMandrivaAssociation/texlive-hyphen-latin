@@ -3,7 +3,7 @@ Version:	58652
 Release:	2
 Summary:	Latin hyphenation patterns
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
+URL:		https://www.ctan.org/tex-archive/language/hyphenation/lahyph.tex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-latin.r%{version}.tar.xz
 BuildArch:	noarch
